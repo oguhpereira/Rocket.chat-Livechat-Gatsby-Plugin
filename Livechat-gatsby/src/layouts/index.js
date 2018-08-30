@@ -24,8 +24,7 @@ const Layout = ({ children, data }) => (
         paddingTop: 0,
       }}
     >
-
-    <RocketLiveChat></RocketLiveChat>
+    <RocketLiveChat uri={data.rocketChatLivechat.url}></RocketLiveChat>
       {children()}
     </div>
   </div>
@@ -43,6 +42,9 @@ export const query = graphql`
       siteMetadata {
         title
       }
+    }
+    rocketChatLivechat{
+      url
     }
   }
 `

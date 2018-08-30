@@ -16,15 +16,15 @@ exports.sourceNodes = (
   console.log("Testing my plugin",configOptions );
   const nodeContentDigest = crypto
   .createHash('md5')
-  .update(configOptions.key)
+  .update(configOptions.url)
   .digest('hex')
   const nodeData = Object.assign({}, configOptions, {
       id: "1928",
       parent: null,
       children: [],
       internal: {
-        type: `PixabayPhoto`,
-        content: configOptions.key,
+        type: `RocketChatLivechat`,
+        content: configOptions.url,
         contentDigest: nodeContentDigest,
       },
   })

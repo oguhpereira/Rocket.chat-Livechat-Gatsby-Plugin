@@ -6,7 +6,7 @@ module.exports = {
   {
     resolve:"gatsby-livechat-rocket-chat",
     options: {
-      key: "<YOUR_API_KEY_HERE>",
+      url: "<YOUR_URL_HERE>",
     }
   }
 ],
