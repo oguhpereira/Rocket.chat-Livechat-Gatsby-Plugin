@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import './index.css'
-import {RocketLiveChat} from 'gatsby-livechat-rocket-chat'
+import RocketLiveChat from '../../plugins/gatsby-livechat-rocket-chat'
 
 const Layout = ({ children, data }) => (
   <div>
