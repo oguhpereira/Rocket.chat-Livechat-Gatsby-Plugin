@@ -6,7 +6,7 @@ module.exports = {
   {
     resolve:"gatsby-livechat-rocket-chat",
     options: {
-      url: "<YOUR_URL_HERE>",
+      url: "http://localhost:3000",
     }
   }
 ],
